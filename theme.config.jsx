@@ -32,7 +32,7 @@ export default {
     content: <Footer />,
   },
   darkMode: {
-    default: false,
+    default: true,
   },
   themeSwitch: {
     useOptions() {

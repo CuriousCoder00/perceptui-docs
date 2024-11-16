@@ -1,4 +1,15 @@
 export default {
-  index: "Introduction",
-  components: "Components",
+  index: {
+    title: "Introduction",
+    theme: {
+      footer: false,
+    },
+  },
+  components: {
+    title: "Components",
+    theme: {
+      breadcrumb: false,
+      footer: false,
+    },
+  },
 };

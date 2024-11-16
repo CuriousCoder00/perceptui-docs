@@ -1,3 +1,3 @@
 export default {
-  avatar: "Avatar",
+  avatar: "Avatar [New]",
 };
