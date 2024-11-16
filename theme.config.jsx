@@ -39,9 +39,9 @@ export default {
       return {
         light: "Light",
         dark: "Dark",
+        system: "System",
       };
     },
   },
   navigation: true,
-  gitTimestamp: Date.now(),
 };
