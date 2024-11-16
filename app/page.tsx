@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Boxes, Code, Palette, Zap } from "lucide-react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import { FaGithub } from "react-icons/fa6";
 
 export default function Component() {
   const router = useRouter();
@@ -23,15 +24,18 @@ export default function Component() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-background to-secondary">
+    <div className="min-h-screen bg-gradient-to-b from-background to-secondary md:px-6">
       <header className="container mx-auto px-4 py-6">
         <nav className="flex justify-between items-center">
           <Link href="/" className="text-2xl font-bold">
             Percept UI
           </Link>
-          <div className="space-x-4">
+          <div className="flex items-center space-x-4">
             <Link href="/docs" className="text-sm font-medium hover:underline">
               Docs
+            </Link>
+            <Link href="https://github.com/perceptui/ui" className="text-sm font-medium hover:underline">
+              <FaGithub className="h-6 w-6" />
             </Link>
           </div>
         </nav>
