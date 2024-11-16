@@ -1,0 +1,55 @@
+import { Avatar, AvatarImage, AvatarFallback } from "@perceptui/lib";
+import { MdArrowOutward } from "react-icons/md";
+
+<h1 className="text-4xl font-bold mt-5">Avatar</h1>
+<p className="text-xl">Profile picture, user initials and fallback icon.</p>
+<div className="flex justify-start items-center gap-7 my-3 p-2">
+  <a
+    className="group text-sky-600 transition duration-300"
+    href="https://github.com/perceptui/ui/blob/main/apps/lib/src/components/avatar.tsx"
+    target="_blank"
+  >
+    View source <MdArrowOutward className="inline" />
+    <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-sky-600"></span>
+  </a>
+  <a
+    className="group text-sky-600 transition duration-300"
+    href="https://github.com/perceptui/ui/issues/new?title=[Avatar]%20Issue"
+    target="_blank"
+  >
+    Report an issue <MdArrowOutward className="inline" />
+    <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-sky-600"></span>
+  </a>
+</div>
+
+<div className="flex flex-col my-6">
+  <div className="flex gap-2 p-4 bg-blue-500/15 mb-2 rounded-lg">
+    <Avatar radius="full">
+      <AvatarImage src="https://images.pexels.com/photos/27269560/pexels-photo-27269560/free-photo-of-marti.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" />
+    </Avatar>
+    <Avatar radius="full">
+      <AvatarFallback>A</AvatarFallback>
+    </Avatar>
+  </div>
+  <div className="block text-wrap w-full py-0">
+      ```jsx code copy
+      <Avatar radius="full">
+        <AvatarImage src="https://images.pexels.com/photos/27269560/pexels-photo-27269560/free-photo-of-marti.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" />
+      </Avatar>
+      <Avatar radius="full">
+        <AvatarFallback>A</AvatarFallback>
+      </Avatar>
+      ```
+  </div>
+</div>
+
+## API References
+
+| Prop     | Type                                     | Description                            | Default |
+| :------- | :--------------------------------------- | :------------------------------------- | :------ |
+| variant  | `"solid" \| "outline" \| "soft"`         | Form of the Avatar                     | solid   |
+| color    | `string`                                 | Color of the Avatar                    | blue    |
+| radius   | `"none"\|"sm"\|"md"\|"lg"\|"xl"\|"full"` | Radius of the Avatar                   | lg      |
+| src      | `string`                                 | Link of the image to be used in Avatar | -       |
+| fallback | `ReactNode`                              | -                                      | -       |
+
