@@ -24,17 +24,20 @@ export default function Component() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-background to-secondary md:px-6">
-      <header className="container mx-auto px-4 py-6">
-        <nav className="flex justify-between items-center">
+    <div className="min-h-screen bg-gradient-to-b from-slate-950 to-slate-900">
+      <header className="px-4 py-6 bg-black w-full md:px-12 shadow-lg border-b">
+        <nav className="flex justify-between items-center w-full">
           <Link href="/" className="text-2xl font-bold">
             Percept UI
           </Link>
           <div className="flex items-center space-x-4">
-            <Link href="/docs" className="text-sm font-medium hover:underline">
+            <Link href="/docs" className="font-medium hover:underline">
               Docs
             </Link>
-            <Link href="https://github.com/perceptui/ui" className="text-sm font-medium hover:underline">
+            <Link
+              href="https://github.com/perceptui/ui"
+              className="text-sm font-medium hover:underline"
+            >
               <FaGithub className="h-6 w-6" />
             </Link>
           </div>
@@ -67,14 +70,62 @@ export default function Component() {
               className="mr-4"
               onClick={() => router.push("/docs")}
             >
-              Get Started
+              Get Started With Docs
             </Button>
             <Button size="lg" variant="outline">
               View Components
             </Button>
           </motion.div>
         </motion.section>
-
+        <motion.section initial="initial" animate="animate" variants={stagger}>
+          <motion.div
+            className="flex flex-col gap-4 mx-auto md:max-w-[700px] p-4 border divide-y-4"
+            variants={fadeIn}
+          >
+            <div className="flex flex-col items-start justify-center border-l-4 p-2 rounded-sm">
+              <div className="flex justify-between items-center w-full">
+                <h1 className="text-xl font-bold">
+                  Fully customizable components library
+                </h1>
+                <span className="bg-blue-600 text-xs p-1 rounded-xl px-3 font-bold animate-pulse">
+                  Live now
+                </span>
+              </div>
+              <p className="text-slate-400">
+                Our library comes with a wide range of components that are fully
+                customizable to match your brand
+              </p>
+            </div>
+            <div className="flex flex-col items-start justify-center border-l-4 p-2 rounded-sm">
+              <div className="flex justify-between items-center w-full">
+                <h1 className="text-xl font-bold">
+                  Templates for popular frameworks
+                </h1>
+                <span className="bg-red-600 text-xs p-1 rounded-xl px-3 font-bold animate-pulse">
+                  Coming soon
+                </span>
+              </div>
+              <p className="text-slate-400">
+                We are working on templates that will help you get started with
+                your project faster. Stay tuned!
+              </p>
+            </div>
+            <div className="flex flex-col items-start justify-center border-l-4 p-2 rounded-sm ">
+              <div className="flex justify-between items-center w-full">
+                <h1 className="text-xl font-bold">
+                  Framer components for prototyping
+                </h1>
+                <span className="bg-red-600 text-xs p-1 rounded-xl px-3 font-bold animate-pulse">
+                  Coming soon
+                </span>
+              </div>
+              <p className="text-slate-400">
+                We are working on components that will help you build beautiful
+                prototypes with Framer. Stay tuned!
+              </p>
+            </div>
+          </motion.div>
+        </motion.section>
         <motion.section
           className="py-20"
           initial="initial"
@@ -88,7 +139,7 @@ export default function Component() {
           >
             Why Choose Our UI Library?
           </motion.h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 px-12 ">
             {[
               {
                 icon: <Boxes className="h-10 w-10 mb-4 text-primary" />,
