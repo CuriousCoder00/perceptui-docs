@@ -1,6 +1,6 @@
 export default {
   index: {
-    title: "Introduction",
+    title: "Getting started",
     theme: {
       footer: false,
     },

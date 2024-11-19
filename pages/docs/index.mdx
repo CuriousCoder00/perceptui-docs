@@ -3,9 +3,43 @@
 
 <p style={{fontSize:'1.2rem', marginTop:'0px', marginBottom:'2rem'  }}>Welcome to **Percept-UI**, a comprehensive React component library designed to enhance your web applications with high-quality, accessible, and customizable UI components. Whether you're building a simple website or a complex web application, Percept-UI offers a variety of components to meet your needs.</p>
 
-### Why Percept-UI?
-
 - **Customizable**: Easily adapt the components to fit your design requirements.
 - **Accessible**: Built with accessibility in mind to ensure your application is usable by everyone.
 - **Lightweight**: Focused on performance, Percept-UI components are optimized to load quickly.
 - **Well-documented**: Comprehensive documentation to help you integrate components seamlessly.
+
+Percept UI component library is designed to work out of the box with minimal configuration with Tailwind CSS.
+
+## Installation
+
+Getting up and running is quick and easy.
+
+### 1. Install Percept UI
+Install the package from your command line.
+
+```bash copy
+npm install @perceptui/lib
+```
+
+### 2. Import The CSS File
+Import the global CSS file at the root of your application.
+
+```tsx copy
+import "@perceptui/lib/percept-ui.css";
+```
+
+### 3. Add Components And Start building
+Import the components from `@perceptui/lib` package and start building.
+
+```tsx code copy
+import { Button } from "@perceptui/lib";
+
+export const ButtonExample = () => {
+    return(
+        <Button variant="ghost" color="red" size="md" radius="sm">
+            Button Example
+        </Button>
+    );
+}
+
+```
