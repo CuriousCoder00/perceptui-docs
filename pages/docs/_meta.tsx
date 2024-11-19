@@ -5,6 +5,12 @@ export default {
       footer: false,
     },
   },
+  colors: {
+    title: "Colors",
+    theme: {
+      footer: false,
+    },
+  },
   components: {
     title: "Components",
     theme: {

@@ -79,10 +79,10 @@ export default function Component() {
         </motion.section>
         <motion.section initial="initial" animate="animate" variants={stagger}>
           <motion.div
-            className="flex flex-col gap-4 mx-auto md:max-w-[700px] p-4 border divide-y-4"
+            className="flex flex-col gap-4 mx-auto md:max-w-[700px] p-4 border"
             variants={fadeIn}
           >
-            <div className="flex flex-col items-start justify-center border-l-4 p-2 rounded-sm">
+            <div className="flex flex-col items-start justify-center border-l-4 p-2 rounded-sm bg-slate-900">
               <div className="flex justify-between items-center w-full">
                 <h1 className="text-xl font-bold">
                   Fully customizable components library
@@ -95,8 +95,17 @@ export default function Component() {
                 Our library comes with a wide range of components that are fully
                 customizable to match your brand
               </p>
+              <motion.div className="mt-3 self-end" variants={fadeIn}>
+                <Button
+                  size="lg"
+                  className="mr-4"
+                  onClick={() => router.push("/docs")}
+                >
+                  Go To Components {">>"}
+                </Button>
+              </motion.div>
             </div>
-            <div className="flex flex-col items-start justify-center border-l-4 p-2 rounded-sm">
+            <div className="flex flex-col items-start justify-center border-l-4 p-2 rounded-sm bg-slate-900">
               <div className="flex justify-between items-center w-full">
                 <h1 className="text-xl font-bold">
                   Templates for popular frameworks
@@ -110,7 +119,7 @@ export default function Component() {
                 your project faster. Stay tuned!
               </p>
             </div>
-            <div className="flex flex-col items-start justify-center border-l-4 p-2 rounded-sm ">
+            <div className="flex flex-col items-start justify-center border-l-4 p-2 rounded-sm bg-slate-900">
               <div className="flex justify-between items-center w-full">
                 <h1 className="text-xl font-bold">
                   Framer components for prototyping

@@ -1,3 +1,5 @@
+import { Title } from "@/components/title";
+
 export default {
-  avatar: "Avatar [New]",
+  avatar: { title: <Title isNew title="Avatar" /> },
 };
