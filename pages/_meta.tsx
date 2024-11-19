@@ -1,3 +1,5 @@
+import { title } from "process";
+
 export default {
   "--": {
     type: "separator",
@@ -10,4 +12,12 @@ export default {
     title: "Docs",
     type: "page",
   },
+  templates: {
+    title: "Templates",
+    type: "page"
+  },
+  framer:{
+    title: "Framer Components",
+    type: "page"
+  }
 };
