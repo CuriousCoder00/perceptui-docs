@@ -1,0 +1,106 @@
+import { Input } from "@perceptui/lib";
+import { IssueHeader } from "@/components/issue-header";
+import { Info } from "lucide-react";
+
+<h1 className="text-4xl font-bold mt-5">Avatar</h1>
+<p className="text-xl">Input with multiple variants and radius.</p>
+<IssueHeader source="input" />
+
+Start using via importing:
+
+```tsx code copy
+import { Input } from "@perceptui/lib";
+```
+
+<div className="flex flex-col my-6 w-full">
+  <div className="flex flex-col w-full gap-2 p-4 bg-blue-500/15 mb-2 rounded-lg">
+    <Input variant="classic" placeholder="Enter your name..." />
+  </div>
+  <div className="block w-full py-0">
+    ```jsx code copy
+    <Input placeholder="Enter your name..." />
+    ```
+  </div>
+</div>
+
+## API References
+
+| Prop      | Type                                     | Description         | Default |
+| :-------- | :--------------------------------------- | :------------------ | :------ |
+| variant   | `"classic" \| "standard" \| "ghost"`     | Form of the Input   | classic |
+| radius    | `"none"\|"sm"\|"md"\|"lg"\|"xl"\|"full"` | Radius of the Input | lg      |
+| className | `string`                                 | className           | \_      |
+
+## Examples
+
+### Variant
+
+Use the `variant` prop to control the visual style of the input.
+
+<div className="flex flex-col my-6 px-2 w-full">
+  <div className="flex flex-col gap-4 p-4 bg-blue-500/15 mb-2 rounded-lg w-full">
+    <Input variant="classic" placeholder="Enter your name..." />
+    <Input variant="standard" placeholder="Enter your name..." />
+    <Input variant="ghost" placeholder="Enter your name..." />
+  </div>
+  <div className="block text-wrap w-full py-0">
+    ```jsx code copy
+    <Input variant="classic" placeholder="Enter your name..." />
+    ```
+  </div>
+  <div className="block text-wrap w-full py-0">
+    ```jsx code copy
+    <Input variant="standard" placeholder="Enter your name..." />
+    ```
+  </div>
+  <div className="block text-wrap w-full py-0">
+    ```jsx code copy
+    <Input variant="ghost" placeholder="Enter your name..." />
+    ```
+  </div>
+</div>
+
+### Radius
+
+Use the `radius` prop to assign a specific radius value.
+
+<div className="flex flex-col my-6 px-2 w-full">
+  <div className="flex flex-col w-full gap-4 p-4 bg-blue-500/15 mb-2 rounded-lg">
+    <Input variant="classic" radius="none" placeholder="Enter your name..." />
+    <Input variant="classic" radius="sm" placeholder="Enter your name..." />
+    <Input variant="classic" radius="md" placeholder="Enter your name..." />
+    <Input variant="classic" radius="lg" placeholder="Enter your name..." />
+    <Input variant="classic" radius="xl" placeholder="Enter your name..." />
+    <Input variant="classic" radius="full" placeholder="Enter your name..." />
+  </div>
+  <div className="block text-wrap w-full py-0">
+    ```jsx code copy
+    <Input radius="none" placeholder="Enter your name..." />
+    ```
+  </div>
+  <div className="block text-wrap w-full py-0">
+    ```jsx code copy
+    <Input radius="sm" placeholder="Enter your name..." />
+    ```
+  </div>
+  <div className="block text-wrap w-full py-0">
+    ```jsx code copy
+    <Input radius="md" placeholder="Enter your name..." />
+    ```
+  </div>
+  <div className="block text-wrap w-full py-0">
+    ```jsx code copy
+    <Input radius="lg" placeholder="Enter your name..." />
+    ```
+  </div>
+  <div className="block text-wrap w-full py-0">
+    ```jsx code copy
+    <Input radius="xl" placeholder="Enter your name..." />
+    ```
+  </div>
+  <div className="block text-wrap w-full py-0">
+    ```jsx code copy
+    <Input radius="full" placeholder="Enter your name..." />
+    ```
+  </div>
+</div>
