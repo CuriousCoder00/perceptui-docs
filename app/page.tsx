@@ -98,64 +98,70 @@ export default function Component() {
           className="z-40 mb-6"
         >
           <motion.div
-            className="flex flex-col gap-4 mx-auto md:max-w-[700px] p-4 border"
+            className="flex flex-col gap-4 mx-auto p-4 border md:max-w-[700px]"
             variants={fadeIn}
           >
-            <h1 className="text-3xl md:text-4xl font-bold text-center">
+            <h1 className="text-3xl md:text-4xl font-bold text-center my-3">
               New Updates
             </h1>
+            <div className="z-40 flex items-center justify-between border-l-4 px-5 py-2 rounded-sm bg-zinc-950 border gap-3 relative">
+              <div className="flex justify-between items-center w-full">
+                <h1 className="text-xl font-bold">Checkbox & Radio</h1>
+              </div>
+              <motion.div className=" self-end" variants={fadeIn}>
+                <Button
+                  disabled
+                  size="sm"
+                  variant="link"
+                  className="mr-4"
+                  onClick={() => router.push("/docs/components/alert")}
+                >
+                  Coming Soon {">>"}
+                </Button>
+              </motion.div>
+            </div>
+            <div className="z-40 flex items-center justify-between border-l-4 px-5 py-2 rounded-sm bg-zinc-950 border gap-3 relative">
+              <div className="flex justify-between items-center w-full">
+                <h1 className="text-xl font-bold">Alert</h1>
+              </div>
+              <motion.div className=" self-end" variants={fadeIn}>
+                <Button
+                  size="sm"
+                  variant="link"
+                  className="mr-4"
+                  onClick={() => router.push("/docs/components/alert")}
+                >
+                  Go To Alert {">>"}
+                </Button>
+              </motion.div>
+            </div>
+            <div className="z-40 flex items-center justify-between border-l-4 px-5 py-2 rounded-sm bg-zinc-950 border gap-3 relative">
+              <div className="flex justify-between items-center w-full">
+                <h1 className="text-xl font-bold">Label</h1>
+              </div>
+              <motion.div className=" self-end" variants={fadeIn}>
+                <Button
+                  size="sm"
+                  variant="link"
+                  className="mr-4"
+                  onClick={() => router.push("/docs/components/label")}
+                >
+                  Go To Label {">>"}
+                </Button>
+              </motion.div>
+            </div>
             <div className="z-40 flex items-center justify-between border-l-4 px-5 py-2 rounded-sm bg-zinc-950 border gap-3 relative">
               <div className="flex justify-between items-center w-full">
                 <h1 className="text-xl font-bold">Input</h1>
               </div>
               <motion.div className=" self-end" variants={fadeIn}>
-                <Button disabled size="sm" variant="link" className="mr-4">
-                  Coming Soon {"> >"}
-                </Button>
-              </motion.div>
-            </div>
-            <div className="z-40 flex items-center justify-between border-l-4 px-5 py-2 rounded-sm bg-zinc-950 border gap-3 relative">
-              <div className="flex justify-between items-center w-full">
-                <h1 className="text-xl font-bold">Avatar</h1>
-              </div>
-              <motion.div className=" self-end" variants={fadeIn}>
                 <Button
                   size="sm"
                   variant="link"
                   className="mr-4"
-                  onClick={() => router.push("/docs/components/avatar")}
+                  onClick={() => router.push("/docs/components/input")}
                 >
-                  Go To Avatar {">>"}
-                </Button>
-              </motion.div>
-            </div>
-            <div className="z-40 flex items-center justify-between border-l-4 px-5 py-2 rounded-sm bg-zinc-950 border gap-3 relative">
-              <div className="flex justify-between items-center w-full">
-                <h1 className="text-xl font-bold">Button</h1>
-              </div>
-              <motion.div className=" self-end" variants={fadeIn}>
-                <Button
-                  size="sm"
-                  variant="link"
-                  className="mr-4"
-                  onClick={() => router.push("/docs/components/button")}
-                >
-                  Go To Button {"> >"}
-                </Button>
-              </motion.div>
-            </div>
-            <div className="z-40 flex items-center justify-between border-l-4 px-5 py-2 rounded-sm bg-zinc-950 border gap-3 relative">
-              <div className="flex justify-between items-center w-full">
-                <h1 className="text-xl font-bold">Badge</h1>
-              </div>
-              <motion.div className=" self-end" variants={fadeIn}>
-                <Button
-                  size="sm"
-                  variant="link"
-                  className="mr-4"
-                  onClick={() => router.push("/docs/components/badge")}
-                >
-                  Go To Badge {"> >"}
+                  Go To Input {">>"}
                 </Button>
               </motion.div>
             </div>
