@@ -38,13 +38,14 @@ import { Avatar, AvatarImage, AvatarFallback } from "@perceptui/lib";
 
 ## API References
 
-| Prop     | Type                                     | Description                            | Default |
-| :------- | :--------------------------------------- | :------------------------------------- | :------ |
-| variant  | `"solid" \| "outline" \| "soft"`         | Form of the Avatar                     | solid   |
-| color    | `string`                                 | Color of the Avatar                    | blue    |
-| radius   | `"none"\|"sm"\|"md"\|"lg"\|"xl"\|"full"` | Radius of the Avatar                   | lg      |
-| src      | `string`                                 | Link of the image to be used in Avatar | -       |
-| fallback | `ReactNode`                              | -                                      | -       |
+| Prop      | Type                                     | Description                            | Default |
+| :-------- | :--------------------------------------- | :------------------------------------- | :------ |
+| variant   | `"solid" \| "outline" \| "soft"`         | Form of the Avatar                     | solid   |
+| color     | `string`                                 | Color of the Avatar                    | blue    |
+| radius    | `"none"\|"sm"\|"md"\|"lg"\|"xl"\|"full"` | Radius of the Avatar                   | lg      |
+| src       | `string`                                 | Link of the image to be used in Avatar | -       |
+| fallback  | `ReactNode`                              | -                                      | -       |
+| className | `string`                                 | className                              | \_      |
 
 ## Examples
 
@@ -69,13 +70,11 @@ Use the `variant` prop to control the visual style of the avatar.
     <Avatar variant="solid" radius="full">
       <AvatarFallback>A</AvatarFallback>
     </Avatar>
-    ```
-    ```jsx code copy
+    ``` ```jsx code copy
     <Avatar variant="soft" radius="full">
       <AvatarFallback>A</AvatarFallback>
     </Avatar>
-    ```
-    ```jsx code copy
+    ``` ```jsx code copy
     <Avatar variant="outline" radius="full">
       <AvatarFallback>A</AvatarFallback>
     </Avatar>
@@ -113,28 +112,23 @@ Use the `color` prop to control the color of the avatar.
     <Avatar color="blue" radius="full">
       <AvatarFallback>A</AvatarFallback>
     </Avatar>
-    ```
-    ```jsx code copy
+    ``` ```jsx code copy
     <Avatar color="red" radius="full">
       <AvatarFallback>A</AvatarFallback>
     </Avatar>
-    ```
-    ```jsx code copy
+    ``` ```jsx code copy
     <Avatar color="green" radius="full">
       <AvatarFallback>A</AvatarFallback>
     </Avatar>
-    ```
-    ```jsx code copy
+    ``` ```jsx code copy
     <Avatar color="yellow" radius="full">
       <AvatarFallback>A</AvatarFallback>
     </Avatar>
-    ```
-    ```jsx code copy
+    ``` ```jsx code copy
     <Avatar color="dark" radius="full">
       <AvatarFallback>A</AvatarFallback>
     </Avatar>
-    ```
-    ```jsx code copy
+    ``` ```jsx code copy
     <Avatar color="cyan" radius="full">
       <AvatarFallback>A</AvatarFallback>
     </Avatar>
@@ -143,7 +137,8 @@ Use the `color` prop to control the color of the avatar.
 </div>
 
 <div className="flex justify-start items-start bg-cyan-500/10 w-full pl-6 p-2 rounded-xl py-4">
-<Info className="inline"/> There are more color properties. Take your time to explore
+  <Info className="inline" /> There are more color properties. Take your time to
+  explore
 </div>
 
 ### Radius
@@ -176,28 +171,23 @@ Use the `radius` prop to assign a specific radius value.
     <Avatar radius="none">
       <AvatarImage src="https://images.pexels.com/photos/27269560/pexels-photo-27269560/free-photo-of-marti.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" />
     </Avatar>
-    ```
-    ```jsx code copy
+    ``` ```jsx code copy
     <Avatar radius="sm">
       <AvatarImage src="https://images.pexels.com/photos/27269560/pexels-photo-27269560/free-photo-of-marti.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" />
     </Avatar>
-    ```
-    ```jsx code copy
+    ``` ```jsx code copy
     <Avatar radius="md">
       <AvatarImage src="https://images.pexels.com/photos/27269560/pexels-photo-27269560/free-photo-of-marti.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" />
     </Avatar>
-    ```
-    ```jsx code copy
+    ``` ```jsx code copy
     <Avatar radius="lg">
       <AvatarImage src="https://images.pexels.com/photos/27269560/pexels-photo-27269560/free-photo-of-marti.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" />
     </Avatar>
-    ```
-    ```jsx code copy
+    ``` ```jsx code copy
     <Avatar radius="xl">
       <AvatarImage src="https://images.pexels.com/photos/27269560/pexels-photo-27269560/free-photo-of-marti.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" />
     </Avatar>
-    ```
-    ```jsx code copy
+    ``` ```jsx code copy
     <Avatar radius="full">
       <AvatarImage src="https://images.pexels.com/photos/27269560/pexels-photo-27269560/free-photo-of-marti.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" />
     </Avatar>
