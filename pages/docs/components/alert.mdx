@@ -1,0 +1,90 @@
+import { Alert } from "@perceptui/lib";
+import { IssueHeader } from "@/components/issue-header";
+import { Info } from "lucide-react";
+
+<h1 className="text-4xl font-bold mt-5">Alert</h1>
+<p className="text-xl">
+  Alert to communicate a state that affects a system, feature or page.
+</p>
+<IssueHeader source="alert" />
+
+Start using via importing:
+
+```tsx code copy
+import { Alert } from "@perceptui/lib";
+```
+
+<div className="flex flex-col my-6 w-full">
+  <div className="flex gap-2 p-4 bg-blue-950/10 mb-2 rounded-lg w-full">
+    <Alert message="This is alert." />
+  </div>
+  <div className="block w-full py-0">
+    ```jsx code copy
+    <Alert message="This is alert." />
+    ```
+  </div>
+</div>
+
+## API References
+
+| Prop    | Type                                          | Description       | Default |
+| :------ | :-------------------------------------------- | :---------------- | :------ |
+| variant | `"solid" \| "outline"`                        | Form of the Alert | solid   |
+| type    | `"success" \| "warning" \| "error" \| "info"` | Type of the Alert | success |
+| icon    | `ReactNode`                                   | Icon of the Alert | type    |
+
+## Examples
+
+### Variant
+
+Use the `variant` prop to control the visual style of the button.
+
+<div className="flex flex-col my-6 px-2 w-full">
+  <div className="flex flex-col gap-2 p-4 bg-blue-950/15 mb-2 rounded-lg w-full">
+    <Alert variant={"solid"} message="This is alert with solid variant." />
+    <Alert variant={"outline"} message="This is alert with outline variant." />
+  </div>
+  <div className="block text-wrap w-full py-1">
+    ```jsx code copy
+    <Alert variant="solid" message="This is alert with solid variant." />
+    ```
+  </div>
+  <div className="block text-wrap w-full py-1">
+    ```jsx code copy
+    <Alert variant="outline" message="This is alert with outline variant." />
+    ```
+  </div>
+</div>
+
+### Type
+
+Use the `type` prop to control the type of the alert.
+
+<div className="flex flex-col my-6 px-2 w-full">
+  <div className="flex flex-col w-full gap-2 p-4 bg-blue-950/15 mb-2 rounded-lg">
+    <Alert type={"success"} message="This is alert with success type." />
+    <Alert type={"warning"} message="This is alert with warning type." />
+    <Alert type={"info"} message="This is alert with info type." />
+    <Alert type={"error"} message="This is alert with error type." />
+  </div>
+  <div className="block text-wrap w-full py-1">
+    ```jsx code copy
+    <Alert type="success" message="This is alert with success type." />
+    ```
+  </div>
+  <div className="block text-wrap w-full py-1">
+    ```jsx code copy
+    <Alert type="warning" message="This is alert with warning type." />
+    ```
+  </div>
+  <div className="block text-wrap w-full py-1">
+    ```jsx code copy
+    <Alert type="info" message="This is alert with info type." />
+    ```
+  </div>
+  <div className="block text-wrap w-full py-1">
+    ```jsx code copy
+    <Alert type="error" message="This is alert with error type." />
+    ```
+  </div>
+</div>
