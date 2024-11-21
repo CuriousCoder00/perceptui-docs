@@ -1,17 +1,12 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Button } from "@/components/ui/button";
-import Link from "next/link";
-import { useRouter } from "next/navigation";
-import { FaGithub } from "react-icons/fa6";
 import ReleasedComponent from "@/components/released-component";
 import { componentsData, features } from "@/lib/data";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
 
 export default function Component() {
-  const router = useRouter();
   const fadeIn = {
     initial: { opacity: 0, y: 20 },
     animate: { opacity: 1, y: 0 },

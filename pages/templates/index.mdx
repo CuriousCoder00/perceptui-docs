@@ -1,1 +1,65 @@
-# templates
+# Getting Started with Templates
+
+Welcome to Percept UI! This guide will walk you through setting up and using the templates for popular frameworks with minimal configuration, allowing you to dive straight into building your product.
+
+## Step 1: Install Percept UI CLI
+
+To begin using the templates, first, you need to install the Percept UI CLI globally. This will allow you to easily create projects with your desired template.
+
+### Install the CLI
+
+```bash copy
+npm install -g @perceptui/cli
+```
+
+## Step 2: Create a New Project Using a Template
+Now that you’ve installed the CLI, you can create a new project with a template that suits your needs. Percept UI provides templates for various popular frameworks, including React, Next.js, and more.
+
+### Create a React Project with Tailwind CSS
+```bash copy
+npx percept-ui create react-tailwind my-project
+```
+This command will initialize a new React project with Percept UI components and Tailwind CSS pre-configured.
+
+### Available Templates:
+- React + Tailwind: Set up a React project with Tailwind CSS configured.
+- Next.js + Tailwind: Start a Next.js project with Tailwind CSS pre-configured.
+
+## Step 3: Start the Development Server
+Once your project is created, navigate to the project folder and run the development server.
+
+```bash copy
+cd my-project
+npm install
+npm run dev
+```
+
+This will install the necessary dependencies and start the server. Open your browser and navigate to http://localhost:3000 to see your project in action.
+
+## Step 4: Customize Your Template
+You now have a fully configured template with customizable Percept UI components. You can start editing the components, update the UI, and focus on building your product.
+
+### Example: Customizing the Button Component
+To customize a button, navigate to src/components/Button.jsx and modify its styles and properties as needed.
+
+```jsx copy
+<Button variant="primary" size="large">
+  Click Me!
+</Button>
+```
+You can modify the properties like variant and size to fit your design.
+
+## Step 5: Build and Deploy
+Once you’ve finished building your project, you can build it for production and deploy it to your preferred hosting platform.
+
+To build the project, run:
+
+```bash copy
+npm run build
+```
+This will create an optimized build ready for deployment.
+
+## Conclusion
+You’re now ready to start building your project using Percept UI’s templates! These templates are designed to save you time and help you focus on creating the product instead of setting up configurations. If you have any questions, feel free to check out our full documentation or reach out to the community.
+
+> Happy coding! 🚀

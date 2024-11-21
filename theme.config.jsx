@@ -1,4 +1,3 @@
-import { useRouter } from "next/router";
 import Footer from "./components/footer";
 export default {
   logo: (
@@ -11,17 +10,10 @@ export default {
     link: "https://github.com/perceptui/ui",
   },
   head: () => {
-    const router = useRouter();
-    const path = router.pathname.split("/");
-    let title = path[path.length === 1 ? path : path.length - 1];
-    function capitalizeFirstLetter(string) {
-      return string[0].toUpperCase() + string.slice(1);
-    }
-    title = capitalizeFirstLetter(title);
     return (
       <>
         <link rel="shortcut icon" href="./assets/favicon.ico" />
-        <title>{title} - Percept UI</title>
+        <title>Percept UI - Build UIs Faster</title>
       </>
     );
   },

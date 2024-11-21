@@ -11,13 +11,13 @@ const Header = () => {
         </Link>
         <div className="flex items-center space-x-4">
           <Link href="/docs" className="font-medium hover:underline">
-            Docs
-          </Link>
-          <Link href="/components" className="font-medium hover:underline">
-            Framer Components
+            Documentation
           </Link>
           <Link href="/templates" className="font-medium hover:underline">
             Templates
+          </Link>
+          <Link href="/framer" className="font-medium hover:underline">
+            Framer Components
           </Link>
           <Link
             href="https://github.com/perceptui/ui"

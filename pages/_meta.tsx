@@ -1,8 +1,6 @@
-import { title } from "process";
-
 export default {
   docs: {
-    title: "Docs",
+    title: "Documentation",
     type: "page",
   },
   templates: {

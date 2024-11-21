@@ -27,7 +27,7 @@ const ReleasedComponent = ({
           className="flex items-center justify-between w-full"
           href={`/docs/components/${name.toLowerCase()}`}
         >
-          <h1 className="relative text-xl font-bold">
+          <h1 className="relative text-base font-bold">
             {name}
             {isNew && (
               <span className="absolute top-0 -right-10 text-green-500 text-xs px-1 rounded-tl-md animate-pulse">
@@ -44,14 +44,14 @@ const ReleasedComponent = ({
           className="flex items-center justify-between w-full"
           href={`${link}`}
         >
-          <h1 className="text-xl font-bold">{name}</h1>
+          <h1 className="text-base font-bold">{name}</h1>
           <span className="text-green-500 text-xs px-1 rounded-tl-md animate-pulse">
             Live Now
           </span>
         </Link>
       ) : (
         <div className="flex items-center justify-between w-full">
-          <h1 className="text-xl font-bold">{name}</h1>
+          <h1 className="text-base font-bold">{name}</h1>
           <span className=" text-red-500 text-xs px-1 rounded-tl-md animate-pulse">
             Coming Soon
           </span>
