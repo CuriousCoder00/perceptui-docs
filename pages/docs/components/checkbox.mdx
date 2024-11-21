@@ -1,0 +1,90 @@
+import { Checkbox } from "@perceptui/lib";
+import { IssueHeader } from "@/components/issue-header";
+import { Info } from "lucide-react";
+
+<h1 className="text-4xl font-bold mt-5">Checkbox</h1>
+<p className="text-xl">
+  Used in forms when a user needs to select multiple values from several
+  options.
+</p>
+<IssueHeader source="checkbox" />
+
+Start using via importing:
+
+```tsx code copy
+import { Checkbox } from "@perceptui/lib";
+```
+
+<div className="flex flex-col my-6 w-full">
+  <div className="flex w-full gap-2 p-4 bg-blue-500/15 mb-2 rounded-lg">
+    <Checkbox>Accept terms and conditions</Checkbox>
+  </div>
+  <div className="block w-full py-0">
+    ```jsx code copy
+    <Checkbox>Accept terms and conditions</Checkbox>
+    ```
+  </div>
+</div>
+
+## API References
+
+| Prop      | Type                           | Description           | Default |
+| :-------- | :----------------------------- | :-------------------- | :------ |
+| size      | `"xs"\|"sm"\|"md"\|"lg"\|"xl"` | Size of the Checkbox  | sm      |
+| color     | `string`                       | Color of the Checkbox | blue    |
+| className | `string`                       | className             | \_      |
+
+## Examples
+
+### Color
+
+<div className="flex flex-col my-6 w-full">
+  <div className="flex items-center justify-between px-3 w-full p-4 bg-blue-500/15 mb-2 rounded-lg">
+    <div className="flex flex-col gap-2">
+      <Checkbox color="red">Checkbox</Checkbox>
+      <Checkbox color="yellow">Checkbox</Checkbox>
+      <Checkbox color="green">Checkbox</Checkbox>
+      <Checkbox color="cyan">Checkbox</Checkbox>
+      <Checkbox color="dark">Checkbox</Checkbox>
+    </div>
+    <div className="flex flex-col gap-2">
+      <Checkbox color="light">Checkbox</Checkbox>
+      <Checkbox color="black">Checkbox</Checkbox>
+      <Checkbox color="blue">Checkbox</Checkbox>
+      <Checkbox color="emerald">Checkbox</Checkbox>
+      <Checkbox color="lime">Checkbox</Checkbox>
+    </div>
+    <div className="flex flex-col gap-2">
+      <Checkbox color="teal">Checkbox</Checkbox>
+      <Checkbox color="pink">Checkbox</Checkbox>
+      <Checkbox color="sky">Checkbox</Checkbox>
+      <Checkbox color="purple">Checkbox</Checkbox>
+      <Checkbox color="indigo">Checkbox</Checkbox>
+    </div>
+  </div>
+  <div className="block w-full py-0">
+    ```jsx code copy
+    <Checkbox color="red">Checkbox</Checkbox>
+    ```
+  </div>
+  <div className="block w-full py-0">
+    ```jsx code copy
+    <Checkbox color="yellow">Checkbox</Checkbox>
+    ```
+  </div>
+  <div className="block w-full py-0">
+    ```jsx code copy
+    <Checkbox color="green">Checkbox</Checkbox>
+    ```
+  </div>
+  <div className="block w-full py-0">
+    ```jsx code copy
+    <Checkbox color="cyan">Checkbox</Checkbox>
+    ```
+  </div>
+  <div className="block w-full py-0">
+    ```jsx code copy
+    <Checkbox color="dark">Checkbox</Checkbox>
+    ```
+  </div>
+</div>
