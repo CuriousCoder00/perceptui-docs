@@ -1,0 +1,103 @@
+import { Radio, RadioGroup } from "@perceptui/lib";
+import { IssueHeader } from "@/components/issue-header";
+import { Info } from "lucide-react";
+
+<h1 className="text-4xl font-bold mt-5">Radio</h1>
+<p className="text-xl">Used to select one option from several options.</p>
+<IssueHeader source="radio" />
+
+Start using via importing:
+
+```tsx code copy
+import { Radio, RadioGroup } from "@perceptui/lib";
+```
+
+<div className="flex flex-col my-6 w-full">
+  <div className="flex w-full gap-2 p-4 bg-blue-500/15 mb-2 rounded-lg">
+    <RadioGroup defaultValue="1">
+      <Radio value="1">Option 1</Radio>
+      <Radio value="2">Option 2</Radio>
+      <Radio value="3">Option 3</Radio>
+    </RadioGroup>
+  </div>
+  <div className="block w-full py-0">
+    ```jsx code copy
+    <RadioGroup defaultValue="1">
+      <Radio value="1">Option 1</Radio>
+      <Radio value="2">Option 2</Radio>
+      <Radio value="3">Option 3</Radio>
+    </RadioGroup>
+    ```
+  </div>
+</div>
+
+## API References
+
+| Prop      | Type                           | Description        | Default |
+| :-------- | :----------------------------- | :----------------- | :------ |
+| size      | `"xs"\|"sm"\|"md"\|"lg"\|"xl"` | Size of the Radio  | sm      |
+| color     | `string`                       | Color of the Radio | blue    |
+| className | `string`                       | className          | \_      |
+
+## Examples
+
+### Color
+
+<div className="flex flex-col my-6 w-full">
+  <div className="flex flex-wrap items-center justify-between px-3 w-full p-4 bg-blue-500/15 mb-2 rounded-lg">
+    <RadioGroup defaultValue="1">
+      <Radio color="blue" value="1">Option 1</Radio>
+      <Radio color="red" value="2">Option 2</Radio>
+      <Radio color="green" value="3">Option 3</Radio>
+      <Radio color="yellow" value="4">Option 4</Radio>
+      <Radio color="rose" value="5">Option 5</Radio>
+    </RadioGroup>
+    <RadioGroup defaultValue="2">
+      <Radio color="light" value="1">Option 1</Radio>
+      <Radio color="black" value="2">Option 2</Radio>
+      <Radio color="dark" value="3">Option 3</Radio>
+      <Radio color="gray" value="4">Option 4</Radio>
+      <Radio color="purple" value="5">Option 5</Radio>
+    </RadioGroup>
+    <RadioGroup defaultValue="3">
+      <Radio color="lime" value="1">Option 1</Radio>
+      <Radio color="teal" value="2">Option 2</Radio>
+      <Radio color="emerald" value="3">Option 3</Radio>
+      <Radio color="indigo" value="4">Option 4</Radio>
+      <Radio color="pink" value="5">Option 5</Radio>
+    </RadioGroup>
+  </div>
+  <div className="block w-full py-0">
+    ```jsx code copy
+ <RadioGroup defaultValue="1">
+      <Radio color="blue" value="1">Option 1</Radio>
+      <Radio color="red" value="2">Option 2</Radio>
+      <Radio color="green" value="3">Option 3</Radio>
+      <Radio color="yellow" value="4">Option 4</Radio>
+      <Radio color="rose" value="5">Option 5</Radio>
+    </RadioGroup>
+    ```
+  </div>
+  <div className="block w-full py-0">
+    ```jsx code copy
+    <RadioGroup defaultValue="2">
+      <Radio color="light" value="1">Option 1</Radio>
+      <Radio color="black" value="2">Option 2</Radio>
+      <Radio color="dark" value="3">Option 3</Radio>
+      <Radio color="gray" value="4">Option 4</Radio>
+      <Radio color="purple" value="5">Option 5</Radio>
+    </RadioGroup>
+    ```
+  </div>
+  <div className="block w-full py-0">
+    ```jsx code copy
+    <RadioGroup defaultValue="3">
+      <Radio color="lime" value="1">Option 1</Radio>
+      <Radio color="teal" value="2">Option 2</Radio>
+      <Radio color="emerald" value="3">Option 3</Radio>
+      <Radio color="indigo" value="4">Option 4</Radio>
+      <Radio color="pink" value="5">Option 5</Radio>
+    </RadioGroup>
+    ```
+  </div>
+</div>

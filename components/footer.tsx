@@ -1,13 +1,10 @@
-import Link from "next/link";
-import React from "react";
 const Footer = () => {
   return (
-    <div className="flex justify-between items-center w-full">
-      <div className="flex gap-2">
-        {new Date().getFullYear()} © <Link href={"/"}>Percept UI</Link>
+    <footer className="">
+      <div className="container mx-auto px-4 text-center text-sm text-muted-foreground z-40">
+        © {new Date().getFullYear()} Percept UI. All rights reserved.
       </div>
-      <div className="flex gap-1"></div>
-    </div>
+    </footer>
   );
 };
 
