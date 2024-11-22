@@ -5,7 +5,7 @@ export default {
       <span className="my-0 font-bold text-2xl">Percept UI</span>
     </div>
   ),
-  docsRepositoryBase: "https://github.com/perceptui/docs/tree/main/",
+  docsRepositoryBase: "https://github.com/perceptui/docs/tree/main",
   project: {
     link: "https://github.com/perceptui/ui",
   },

@@ -1,13 +1,6 @@
 import { Title } from "@/components/title";
 
 export default {
-  "--": {
-    type: "separator",
-    title: "Components",
-    theme: {
-      footer: false,
-    },
-  },
   alert: { title: <Title title="Alert" /> },
   avatar: { title: <Title title="Avatar" /> },
   badge: { title: <Title title="Badge" /> },

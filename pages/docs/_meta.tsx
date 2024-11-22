@@ -13,11 +13,9 @@ export default {
     },
   },
   components: {
-    type: "page",
     title: "Components",
     theme: {
       footer: false,
-      type: "separator",
     },
   },
 };
