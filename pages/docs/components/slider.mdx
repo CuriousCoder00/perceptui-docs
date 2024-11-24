@@ -1,1 +1,84 @@
-Coming Soon...
+import { Slider } from "@perceptui/ui";
+import { IssueHeader } from "@/components/issue-header";
+import { Info } from "lucide-react";
+
+<h1 className="text-4xl font-bold mt-5">Slider</h1>
+<p className="text-xl">
+  Used to allow users to make selections from a range of values.
+</p>
+<IssueHeader source="slider" />
+
+Start using via importing:
+
+```tsx code copy
+import { Slider } from "@perceptui/ui";
+```
+
+<div className="flex flex-col my-6 w-full">
+  <div className="flex w-full gap-2 p-4 bg-blue-500/15 mb-2 rounded-lg">
+    <Slider />
+  </div>
+  <div className="block w-full py-0">
+    ```jsx code copy
+    <Slider />
+    ```
+  </div>
+</div>
+
+## API References
+
+| Prop      | Type                           | Description        | Default |
+| :-------- | :----------------------------- | :----------------- | :------ |
+| color     | `string`                       | Color of the Slider | blue    |
+| className | `string`                       | className          | \_      |
+
+## Examples
+
+### Color
+
+<div className="flex flex-col my-6 w-full">
+  <div className="flex flex-col gap-4 items-center justify-start px-3 w-full p-4 bg-blue-500/15 mb-2 rounded-lg">
+    <Slider color="red"/>
+    <Slider color="light"/>
+    <Slider color="yellow"/>
+    <Slider color="cyan"/>
+    <Slider color="teal"/>
+    <Slider color="emerald"/>
+  </div>
+  <div className="block w-full py-0">
+    ```jsx code copy
+    <Slider color="red"/>
+    ```
+  </div>
+  <div className="block w-full py-0">
+    ```jsx code copy
+    <Slider color="light"/>
+    ```
+  </div>
+  <div className="block w-full py-0">
+    ```jsx code copy
+    <Slider color="yellow"/>
+    ```
+  </div>
+  <div className="block w-full py-0">
+    ```jsx code copy
+    <Slider color="cyan"/>
+    ```
+  </div>
+  <div className="block w-full py-0">
+    ```jsx code copy
+    <Slider color="teal"/>
+    ```
+  </div>
+  <div className="block w-full py-0">
+    ```jsx code copy
+    <Slider color="emerald"/>
+    ```
+  </div>
+</div>
+
+
+<div className="flex justify-start items-start bg-cyan-500/10 w-full pl-6 p-2 rounded-xl py-4">
+  <Info className="inline" /> There are more color properties. Take your time to
+  explore
+</div>

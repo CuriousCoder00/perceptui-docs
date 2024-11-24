@@ -2,6 +2,14 @@ import { Boxes, Code, Palette, Zap } from "lucide-react";
 
 export const componentsData = [
   {
+    name: "Spinner",
+    isNew: true,
+  },
+  {
+    name: "Slider",
+    isNew: true,
+  },
+  {
     name: "Radio",
     isNew: true,
   },
