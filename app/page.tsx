@@ -78,12 +78,12 @@ export default function Component() {
             variants={fadeIn}
           >
             <span className="text-slate-400">Components</span>
-            <ReleasedComponent isReleased={false} name="Spinner" />
-            <ReleasedComponent isReleased={false} name="Slider" />
+
             {componentsData.map((component, index) => (
               <ReleasedComponent
                 key={index}
-                isComponent
+                isReleased={component.isReleased}
+                isComponent={!component.isComponent}
                 isNew={component.isNew}
                 name={component.name}
               />
