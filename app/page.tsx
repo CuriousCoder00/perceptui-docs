@@ -58,7 +58,8 @@ export default function Component() {
               link="/docs/"
             />
             <ReleasedComponent
-              isReleased={false}
+              isReleased
+              link="/templates/"
               name="Templates for popular frameworks"
             />
             <ReleasedComponent

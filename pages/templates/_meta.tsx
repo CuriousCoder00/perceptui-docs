@@ -12,4 +12,11 @@ export default {
         footer: false,
       },
     },
+    "---": {
+      type: "separator",
+      title: "Templates",
+      theme: {
+        footer: false,
+      },
+    },
   };
