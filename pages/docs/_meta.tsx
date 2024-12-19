@@ -18,8 +18,8 @@ export default {
       footer: false,
     },
   },
-  animated_links: {
-    title: "Animated Links",
+  "hover-effects": {
+    title: "Hover Effects",
     theme: {
       footer: false,
     },

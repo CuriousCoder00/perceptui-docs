@@ -20,7 +20,7 @@ const ReleasedComponent = ({
     <Button
       disabled={!isReleased && !isComponent}
       variant={"outline"}
-      className="flex items-center border-l-4 border-l-zinc-500 hover:border-l-blue-600 w-full h-12 z-40"
+      className="flex items-center border-l-4 border-l-zinc-500 hover:border-l-blue-600 w-full h-12 z-40 mb-3"
     >
       {isComponent ? (
         <Link
