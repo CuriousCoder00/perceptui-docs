@@ -1,0 +1,31 @@
+import { Link } from "@perceptui/ui";
+import { IssueHeader } from "@/components/issue-header";
+import { Info } from "lucide-react";
+
+<h1 className="text-4xl font-bold mt-5">Link</h1>
+<p className="text-xl">Renders an link associated with anchor tag.</p>
+<IssueHeader source="link" />
+
+Start using via importing:
+
+```tsx code copy
+import { Link } from "@perceptui/ui";
+```
+
+<div className="flex flex-col my-6 w-full">
+  <div className="flex w-full gap-2 p-4 bg-blue-500/15 mb-2 rounded-lg">
+    <Link href="/docs/components/link">This is the label</Link>
+  </div>
+  <div className="block w-full py-0">
+    ```jsx code copy
+    <Link href="/docs/components/link">This is the label</Link>
+    ```
+  </div>
+</div>
+
+## API References
+
+| Prop      | Type     | Description | Default |
+| :-------- | :------- | :---------- | :------ |
+| className | `string` | className   | \_      |
+| href      | `string` | href        | \_      |

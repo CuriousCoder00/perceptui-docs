@@ -18,4 +18,10 @@ export default {
       footer: false,
     },
   },
+  animated_links: {
+    title: "Animated Links",
+    theme: {
+      footer: false,
+    },
+  },
 };

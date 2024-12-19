@@ -12,4 +12,5 @@ export default {
   slider: { title: <Title title="Slider" /> },
   spinner: { title: <Title isNew title="Spinner" /> },
   switch: { title: <Title isNew title="Switch" /> },
+  link: { title: <Title isNew title="Link" /> },
 };

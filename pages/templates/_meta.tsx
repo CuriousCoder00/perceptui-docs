@@ -20,7 +20,7 @@ export default {
     },
   },
   vite: {
-    title: "Vite Templates",
+    title: "React Templates",
     theme: {
       footer: false,
     },
