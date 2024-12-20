@@ -1,0 +1,62 @@
+---
+title: "Underline Hover Effect"
+description: "Learn how to implement hover effects in your projects using Percept UI components."
+---
+
+import { Link } from "@perceptui/ui";
+
+# Underline Hover Effects
+
+## Copy and Paste the Code
+
+Use the following example to add hover effects to your components:
+
+### Example
+
+#### Effect 1
+
+<div className="flex flex-col my-6 w-full">
+  <div className="flex gap-2 p-4 bg-blue-700/10 mb-2 rounded-lg w-full">
+    <Link
+      href="#"
+      className="no-underline relative group text-base hover:dark:text-sky-400 hover:text-sky-600 text-gray-600 dark:text-gray-400"
+    >
+      Hover Me
+      <span className="absolute -bottom-1 left-0 w-full h-[2px] bg-sky-600 dark:bg-sky-500 rounded transition-transform origin-right scale-x-0 group-hover:origin-left group-hover:scale-x-100 duration-300 ease-in-out"></span>
+    </Link>
+  </div>
+  <div className="block w-full py-0">
+    ```jsx code copy
+    <Link
+      href="#"
+      className="no-underline relative group text-base hover:dark:text-sky-400 hover:text-sky-600 text-gray-600 dark:text-gray-400"
+    >
+      Hover Me
+      <span className="absolute -bottom-1 left-0 w-full h-[2px] bg-sky-600 dark:bg-sky-500 rounded transition-transform origin-right scale-x-0 group-hover:origin-left group-hover:scale-x-100 duration-300 ease-in-out"></span>
+    </Link>
+    ```
+  </div>
+</div>
+
+#### Effect 2
+
+<div className="flex flex-col my-6 w-full">
+  <div className="flex gap-2 p-4 bg-blue-700/10 mb-2 rounded-lg w-full">
+    <Link
+      href="#"
+      class="relative text-inherit no-underline after:content-[''] after:bg-sky-600 hover:after:bg-gradient-to-r hover:after:from-red-500 hover:after:via-pink-500 hover:after:to-blue-500 after:absolute after:bottom-0 after:left-0 after:w-full after:h-[3px] after:bg-no-repeat after:bg-[length:0%_3px] after:transition-[background-size] after:duration-1000 hover:after:bg-[length:100%_3px]"
+    >
+      Hover Me
+    </Link>
+  </div>
+  <div className="block w-full py-0">
+    ```jsx code copy
+    <Link
+      href="#"
+      class="relative text-inherit no-underline after:content-[''] after:bg-sky-600 hover:after:bg-gradient-to-r hover:after:from-red-500 hover:after:via-pink-500 hover:after:to-blue-500 after:absolute after:bottom-0 after:left-0 after:w-full after:h-[3px] after:bg-no-repeat after:bg-[length:0%_3px] after:transition-[background-size] after:duration-1000 hover:after:bg-[length:100%_3px]"
+    >
+      Hover Me
+    </Link>
+    ```
+  </div>
+</div>

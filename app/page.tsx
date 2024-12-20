@@ -76,6 +76,7 @@ export default function Component() {
                 link="/docs/"
               />
               <ReleasedComponent
+                isReleased
                 link="/docs/hover-effects/getting-started"
                 name="Hover Effects with Amazing Animations"
               />

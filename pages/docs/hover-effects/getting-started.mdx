@@ -1,1 +1,52 @@
-# Getting Started with Link Components
+---
+title: "Getting Started with Hover Effects"
+description: "Learn how to implement hover effects in your projects using Percept UI components."
+---
+
+import { Link } from "@perceptui/ui";
+
+# Getting Started with Hover Effects
+
+Hover effects enhance the interactivity of your application by providing visual feedback when users interact with elements. Percept UI makes it easy to apply modern, customizable hover effects.
+
+## Copy and Paste the Code
+
+Use the following example to add hover effects to your components:
+
+### Example
+
+{" "}
+
+<div className="grid grid-cols-6 gap-5 p-4 bg-blue-950/10 mb-2 rounded-lg w-full">
+<div className="col-span-2 p-4 border border-slate-600 rounded-xl">
+  <Link
+    href="#"
+    className="no-underline relative group text-base hover:dark:text-sky-400 hover:text-sky-600 text-gray-600 dark:text-gray-400"
+  >
+    Hover Me
+    <span className="absolute -bottom-1 left-0 w-full h-[2px] bg-sky-600 dark:bg-sky-500 rounded transition-transform origin-right scale-x-0 group-hover:origin-left group-hover:scale-x-100 duration-300 ease-in-out"></span>
+  </Link>
+</div>
+<div className="col-span-2 p-4 border border-slate-600 rounded-xl">
+  <Link
+    href="#"
+    class="relative text-inherit no-underline after:content-[''] after:bg-sky-600 hover:after:bg-gradient-to-r hover:after:from-red-500 hover:after:via-pink-500 hover:after:to-blue-500 after:absolute after:bottom-0 after:left-0 after:w-full after:h-[3px] after:bg-no-repeat after:bg-[length:0%_3px] after:transition-[background-size] after:duration-1000 hover:after:bg-[length:100%_3px]"
+  >
+    Hover Me
+  </Link>
+</div>
+<div className="col-span-2 p-4 border border-slate-600 rounded-xl">
+  <Link href="#" className="relative font-bold no-underline group">
+    Hover Me
+    <span class="absolute left-0 bottom-[3px] w-full h-[8px] dark:bg-sky-700 bg-sky-500 z-[-1] transition-all duration-300 ease-in-out group-hover:bottom-0 group-hover:h-full"></span>
+  </Link>
+</div>
+<div className="col-span-2 p-4 border border-slate-600 rounded-xl">
+  <Link
+    href="#"
+    class="relative inline-block px-1 -mx-1 text-sky-700 dark:text-sky-500 dark:hover:text-white hover:text-white font-bold text-[27px] leading-[1.5] no-underline shadow-[inset_0_0_0_0_#04bbff] transition-all duration-300 ease-in-out hover:text-white hover:shadow-[inset_200px_0_0_0_#04bbff] w-full"
+  >
+    Hover Me
+  </Link>
+</div>
+</div>
