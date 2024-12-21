@@ -1,2 +1,3 @@
-declare module '@perceptui/ui'
-export { }
+declare module '@perceptui/ui' {
+    export * from "@perceptui/ui"
+}
