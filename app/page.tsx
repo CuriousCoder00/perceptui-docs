@@ -6,6 +6,8 @@ import { componentsData, features } from "@/lib/data";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
 import { ScrollArea } from "@/components/ui/scroll-area";
+import Hero from "@/components/hero";
+import ShowCase from "@/components/showcase";
 export default function Component() {
   const fadeIn = {
     initial: { opacity: 0, y: 20 },
@@ -22,9 +24,11 @@ export default function Component() {
   };
 
   return (
-    <div className="min-h-screen bg-zinc-950 relative overflow-hidden z-[1000]">
+    <div className="min-h-screen bg-black relative overflow-hidden z-[1000]">
       <Header />
+      <Hero />
       <div className="flex flex-col items-center justify-center px-5 min-h-dvh opacity-100 ">
+        <ShowCase />
         <motion.div
           variants={stagger}
           className="absolute top-0 -right-60 bottom-0 -left-96 glare-image opacity-20 blur-md "
@@ -36,30 +40,6 @@ export default function Component() {
           className="absolute top-1 -right-96 bottom-0 -left-48 bg-opacity-40 mix-blend-color-dodge blur-md light-rays animate-rays"
         />
         <main className="mx-auto px-4 max-w-[1200px] relative flex flex-col z-30 gap-10">
-          <motion.section
-            className="text-center pt-40 flex justify-center items-center flex-col"
-            initial="initial"
-            animate="animate"
-            variants={stagger}
-          >
-            <motion.h1
-              className="text-4xl md:text-6xl font-bold mb-6 sm:text-5xl tracking-tight lg:text-6xl lg:w-[900px]  relative"
-              variants={fadeIn}
-            >
-              Build Beautiful UIs <span className="text-primary">Faster</span>
-              <span
-                className="absolute inset-0 animate-glow bg-gradient-to-r from-blue-500/60 to-pink-500/60 blur-2xl"
-                aria-hidden="true"
-              ></span>
-            </motion.h1>
-            <motion.p
-              className="text-xl text-muted-foreground"
-              variants={fadeIn}
-            >
-              A modern, customizable, and accessible component library for React
-              applications
-            </motion.p>
-          </motion.section>
           <motion.section
             initial="initial"
             animate="animate"

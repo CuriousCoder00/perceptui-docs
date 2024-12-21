@@ -12,8 +12,8 @@ import { Menu } from "lucide-react";
 
 const Header = () => {
   return (
-    <header className="fixed top-0 bg-black w-full shadow-lg border-b z-50">
-      <div className="flex items-center justify-center w-full bg-sky-600 py-2">
+    <header className="fixed top-0 bg-black/30 backdrop-blur-2xl w-full shadow-lg border-b border-b-slate-800 z-[200]">
+      <div className="flex items-center justify-center w-full bg-gradient-to-r from-sky-700 to-purple-700 bg-sky-600 py-2">
         <span className="text-sm text-white font-medium">
           ⚡️ New: Percept UI Templates are now available! Read the{" "}
           <Link href="/templates/" className="underline">
@@ -53,7 +53,7 @@ const Header = () => {
             <SheetTrigger>
               <Menu size={30} />
             </SheetTrigger>
-            <SheetContent>
+            <SheetContent className="md:hidden z-[99999999]">
               <SheetHeader>
                 <SheetTitle>
                   <Link href="/" className="text-2xl font-bold">
