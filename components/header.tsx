@@ -26,13 +26,13 @@ const Header = () => {
           Percept UI
         </Link>
         <div className="md:flex hidden items-center space-x-4">
-          <Link href="/docs" className="font-medium hover:underline">
+          <Link href="/docs" className="font-medium hover:underline text-sm">
             Documentation
           </Link>
-          <Link href="/templates" className="font-medium hover:underline">
+          <Link href="/templates" className="font-medium hover:underline text-sm">
             Templates
           </Link>
-          <Link href="/framer" className="font-medium hover:underline">
+          <Link href="/framer" className="font-medium hover:underline text-sm">
             Framer Components
           </Link>
           <Link
