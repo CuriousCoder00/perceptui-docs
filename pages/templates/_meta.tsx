@@ -12,15 +12,9 @@ export default {
       footer: false,
     },
   },
-  "---": {
+  "start-templates": {
     type: "separator",
     title: "Templates",
-    theme: {
-      footer: false,
-    },
-  },
-  vite: {
-    title: "React Templates",
     theme: {
       footer: false,
     },
