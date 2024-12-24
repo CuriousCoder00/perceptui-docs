@@ -1,17 +1,17 @@
 import React from "react";
-import { Slider, Alert, Button } from "@perceptui/ui";
+import { Slider, Alert, Button, PasswordInput } from "@perceptui/ui";
 import Link from "next/link";
 
 const ShowCase = () => {
   return (
-    <div className="max-h-52 flex z-50 relative overflow-x-auto gap-4 min-h-[50dvh] max-w-screen-2xl no-scrollbar md:px-24 px-4">
+    <div className="max-h-52 flex z-50 gap-4 overflow-x-auto min-h-[50dvh] max-w-screen-2xl no-scrollbar md:px-24 px-4 relative">
       {showCaseItems.map((item, index) => (
         <div
           key={index}
           className="min-w-96 min-h-52 z-50 h-full p-4 rounded-md border border-slate-900 flex flex-col items-center justify-center relative"
         >
-          {item.component}
-          <div className="absolute flex w-full justify-center text-center bottom-2 font-mono text-xs text-slate-400">
+          <div>{item.component}</div>
+          <div className="flex w-full absolute justify-center text-center bottom-2 font-mono text-xs text-slate-400">
             {item.title}
           </div>
         </div>
@@ -82,5 +82,9 @@ const showCaseItems = [
         </div>
       </div>
     ),
+  },
+  {
+    title: "Password Input",
+    component: <PasswordInput />,
   },
 ];

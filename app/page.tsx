@@ -27,8 +27,8 @@ export default function Component() {
     <div className="min-h-screen bg-black relative overflow-hidden z-[1000]">
       <Header />
       <Hero />
+      <ShowCase />
       <div className="flex flex-col items-center justify-center px-5 min-h-dvh opacity-100 ">
-        <ShowCase />
         <motion.div
           variants={stagger}
           className="absolute top-0 -right-60 bottom-0 -left-96 glare-image opacity-20 blur-md "

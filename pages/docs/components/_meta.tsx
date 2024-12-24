@@ -13,4 +13,5 @@ export default {
   spinner: { title: <Title isNew title="Spinner" /> },
   switch: { title: <Title isNew title="Switch" /> },
   link: { title: <Title isNew title="Link" /> },
+  "password-input": { title: <Title isNew title="Password Input" /> },
 };

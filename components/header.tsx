@@ -23,7 +23,7 @@ const Header = () => {
       </div>
       <nav className="flex justify-between items-center w-full mt-5 md:px-12 pb-3 px-4">
         <Link href="/" className="text-2xl font-bold">
-          Percept UI
+          Percept UI (Beta)
         </Link>
         <div className="md:flex hidden items-center space-x-4">
           <Link href="/docs" className="font-medium hover:underline text-sm">
