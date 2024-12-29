@@ -1,3 +1,5 @@
+import { Title } from "@/components/title";
+
 export default {
   "--": {
     type: "separator",
@@ -8,6 +10,25 @@ export default {
   },
   index: {
     title: "Getting started",
+    theme: {
+      footer: false,
+    },
+  },
+  "---": {
+    type: "separator",
+    title: "Layouts",
+    theme: {
+      footer: false,
+    },
+  },
+  "aspect-ratio": {
+    title: <Title title="Aspect Ratio" isNew />,
+    theme: {
+      footer: false,
+    },
+  },
+  flex: {
+    title: <Title title="Flex" isNew />,
     theme: {
       footer: false,
     },

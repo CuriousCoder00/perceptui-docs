@@ -10,8 +10,8 @@ export default {
   label: { title: <Title title="Label" /> },
   radio: { title: <Title title="Radio" /> },
   slider: { title: <Title title="Slider" /> },
-  spinner: { title: <Title isNew title="Spinner" /> },
-  switch: { title: <Title isNew title="Switch" /> },
-  link: { title: <Title isNew title="Link" /> },
-  "password-input": { title: <Title isNew title="Password Input" /> },
+  spinner: { title: <Title title="Spinner" /> },
+  switch: { title: <Title title="Switch" /> },
+  link: { title: <Title title="Link" /> },
+  "password-input": { title: <Title title="Password Input" /> },
 };

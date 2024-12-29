@@ -6,7 +6,7 @@ export const IssueHeader = ({ source }: { source: string }) => {
     <div className="flex justify-start items-center gap-7 my-3 p-2">
       <a
         className="group text-sky-600 transition duration-300"
-        href={`https://github.com/perceptui/ui/blob/main/apps/lib/src/components/${source}.tsx`}
+        href={`https://github.com/perceptui/ui/blob/main/apps/lib/src/${source}.tsx`}
         target="_blank"
       >
         View source <MdArrowOutward className="inline" />
@@ -15,7 +15,7 @@ export const IssueHeader = ({ source }: { source: string }) => {
       <a
         className="group text-sky-600 transition duration-300"
         href={`https://github.com/perceptui/ui/issues/new?title=[${
-          source[0].toUpperCase() + source.slice(1)
+          source.split("/")[source.split("/").length - 1]
         }]%20Issue`}
         target="_blank"
       >

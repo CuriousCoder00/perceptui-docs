@@ -1,0 +1,409 @@
+import { Flex } from "@perceptui/ui";
+import { IssueHeader } from "@/components/issue-header";
+
+<h1 className="text-4xl font-bold mt-5">Flex Layout</h1>
+<p className="text-xl">Flex layout</p>
+<IssueHeader source="layouts/flex" />
+
+Start using via importing:
+
+```tsx code copy
+import { Flex } from "@perceptui/ui";
+```
+
+<div className="flex flex-col my-6 w-full">
+  <div className="flex gap-2 p-4 bg-blue-950/10 mb-2 rounded-lg w-full">
+    <Flex>
+      <div className="dark:bg-slate-100/20 bg-slate-900/20 w-[25%] h-12"></div>
+      <div className="dark:bg-slate-100/20 bg-slate-900/20 w-[25%] h-12"></div>
+      <div className="dark:bg-slate-100/20 bg-slate-900/20 w-[25%] h-12"></div>
+      <div className="dark:bg-slate-100/20 bg-slate-900/20 w-[25%] h-12"></div>
+    </Flex>
+  </div>
+  <div className="block w-full py-0">
+    ```jsx code copy
+    <Flex>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </Flex>
+    ```
+  </div>
+</div>
+
+## API References
+
+| Prop      | Type                                                                 | Description               | Default    |
+| :-------- | :------------------------------------------------------------------- | :------------------------ | :--------- |
+| gap       | `number`                                                             | Gap between flex elements | `4`        |
+| direction | `"row" \| "rowReverse" \| "col" \| "colReverse"`                     | Flex Direction            | `"row"`    |
+| wrap      | `"noWrap" \| "wrap" \| "wrapReverse"`                                | Flex Wrap                 | `"noWrap"` |
+| justify   | `"start" \| "end" \| "center" \| "between" \| "around" \| "evenly" ` | Flex Justify Content      | `"start"`  |
+| align     | `"start" \| "end" \| "center" \| "baseline" \| "stretch" `           | Flex Align Content        | `"start"`  |
+
+## Examples
+
+### Gap
+
+<div className="flex flex-col my-6 w-full">
+  <div className="flex flex-col gap-2 p-4 bg-blue-950/10 mb-2 rounded-lg w-full">
+    <Flex gap={3}>
+      <div className="dark:bg-slate-100/20 bg-slate-900/20 w-[25%] h-12"></div>
+      <div className="dark:bg-slate-100/20 bg-slate-900/20 w-[25%] h-12"></div>
+      <div className="dark:bg-slate-100/20 bg-slate-900/20 w-[25%] h-12"></div>
+      <div className="dark:bg-slate-100/20 bg-slate-900/20 w-[25%] h-12"></div>
+    </Flex>
+    <div className="block w-full py-0">
+      ```jsx code copy
+      <Flex gap={3}>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </Flex>
+      ```
+    </div>
+    <Flex gap={2}>
+      <div className="dark:bg-slate-100/20 bg-slate-900/20 w-[25%] h-12"></div>
+      <div className="dark:bg-slate-100/20 bg-slate-900/20 w-[25%] h-12"></div>
+      <div className="dark:bg-slate-100/20 bg-slate-900/20 w-[25%] h-12"></div>
+      <div className="dark:bg-slate-100/20 bg-slate-900/20 w-[25%] h-12"></div>
+    </Flex>
+    <div className="block w-full py-0">
+      ```jsx code copy
+      <Flex gap={2}>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </Flex>
+      ```
+    </div>
+    <Flex gap={1}>
+      <div className="dark:bg-slate-100/20 bg-slate-900/20 w-[25%] h-12"></div>
+      <div className="dark:bg-slate-100/20 bg-slate-900/20 w-[25%] h-12"></div>
+      <div className="dark:bg-slate-100/20 bg-slate-900/20 w-[25%] h-12"></div>
+      <div className="dark:bg-slate-100/20 bg-slate-900/20 w-[25%] h-12"></div>
+    </Flex>
+    <div className="block w-full py-0">
+      ```jsx code copy
+      <Flex gap={1}>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </Flex>
+      ```
+    </div>
+  </div>
+</div>
+
+### Direction
+
+<div className="flex flex-col my-6 w-full">
+  <div className="flex flex-col gap-4 p-4 bg-blue-950/10 mb-2 rounded-lg w-full">
+    <Flex direction="row" className="p-2 border">
+      <div className="dark:bg-slate-100/20 bg-slate-900/20 w-[25%] h-12">1</div>
+      <div className="dark:bg-slate-100/20 bg-slate-900/20 w-[25%] h-12">2</div>
+      <div className="dark:bg-slate-100/20 bg-slate-900/20 w-[25%] h-12">3</div>
+      <div className="dark:bg-slate-100/20 bg-slate-900/20 w-[25%] h-12">4</div>
+    </Flex>
+    <div className="block w-full py-0">
+      ```jsx code copy
+      <Flex direction="row">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </Flex>
+      ```
+    </div>
+    <Flex direction="rowReverse" className="p-2 border">
+      <div className="dark:bg-slate-100/20 bg-slate-900/20 w-[25%] h-12">1</div>
+      <div className="dark:bg-slate-100/20 bg-slate-900/20 w-[25%] h-12">2</div>
+      <div className="dark:bg-slate-100/20 bg-slate-900/20 w-[25%] h-12">3</div>
+      <div className="dark:bg-slate-100/20 bg-slate-900/20 w-[25%] h-12">4</div>
+    </Flex>
+    <div className="block w-full py-0">
+      ```jsx code copy
+      <Flex direction="rowReverse">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </Flex>
+      ```
+    </div>
+    <div className="flex gap-2">
+      <Flex direction="col" className="p-2 border w-full">
+        <div className="dark:bg-slate-100/20 bg-slate-900/20 w-[25%] h-12 w-full">1</div>
+        <div className="dark:bg-slate-100/20 bg-slate-900/20 w-[25%] h-12 w-full">2</div>
+        <div className="dark:bg-slate-100/20 bg-slate-900/20 w-[25%] h-12 w-full">3</div>
+        <div className="dark:bg-slate-100/20 bg-slate-900/20 w-[25%] h-12 w-full">4</div>
+      </Flex>
+      <Flex direction="colReverse" className="p-2 border w-full">
+        <div className="dark:bg-slate-100/20 bg-slate-900/20 w-[25%] h-12 w-full">1</div>
+        <div className="dark:bg-slate-100/20 bg-slate-900/20 w-[25%] h-12 w-full">2</div>
+        <div className="dark:bg-slate-100/20 bg-slate-900/20 w-[25%] h-12 w-full">3</div>
+        <div className="dark:bg-slate-100/20 bg-slate-900/20 w-[25%] h-12 w-full">4</div>
+      </Flex>
+    </div>
+  </div>
+  <div className="flex flex-col gap-2">
+    <div className="block w-full py-0">
+      ```jsx code copy
+      <Flex direction="col">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </Flex>
+      ```
+    </div>
+    <div className="block w-full py-0">
+      ```jsx code copy
+      <Flex direction="colReverse">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </Flex>
+      ```
+    </div>
+  </div>
+</div>
+
+### Wrap
+
+<div className="flex flex-col my-6 w-full">
+  <div className="flex flex-col gap-2 p-4 bg-blue-950/10 mb-2 rounded-lg w-full">
+    <Flex wrap="noWrap" className="p-2 border w-full">
+      <div className="dark:bg-slate-100/20 bg-slate-900/20 w-[25%] h-12">1</div>
+      <div className="dark:bg-slate-100/20 bg-slate-900/20 w-[25%] h-12">2</div>
+      <div className="dark:bg-slate-100/20 bg-slate-900/20 w-[25%] h-12">3</div>
+      <div className="dark:bg-slate-100/20 bg-slate-900/20 w-[25%] h-12">4</div>
+    </Flex>
+    <div className="block w-full py-0">
+      ```jsx code copy
+      <Flex wrap="noWrap">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </Flex>
+      ```
+    </div>
+    <Flex wrap="wrapReverse" className="p-2 border w-full">
+      <div className="dark:bg-slate-100/20 bg-slate-900/20 w-[25%] h-12">1</div>
+      <div className="dark:bg-slate-100/20 bg-slate-900/20 w-[25%] h-12">2</div>
+      <div className="dark:bg-slate-100/20 bg-slate-900/20 w-[25%] h-12">3</div>
+      <div className="dark:bg-slate-100/20 bg-slate-900/20 w-[25%] h-12">4</div>
+    </Flex>
+    <div className="block w-full py-0">
+      ```jsx code copy
+      <Flex wrap="wrapReverse">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </Flex>
+      ```
+    </div>
+    <Flex wrap="wrap" className="p-2 border w-full">
+      <div className="dark:bg-slate-100/20 bg-slate-900/20 w-[25%] h-12">1</div>
+      <div className="dark:bg-slate-100/20 bg-slate-900/20 w-[25%] h-12">2</div>
+      <div className="dark:bg-slate-100/20 bg-slate-900/20 w-[25%] h-12">3</div>
+      <div className="dark:bg-slate-100/20 bg-slate-900/20 w-[25%] h-12">4</div>
+    </Flex>
+    <div className="block w-full py-0">
+      ```jsx code copy
+      <Flex wrap="wrap">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </Flex>
+      ```
+    </div>
+  </div>
+</div>
+
+### Align
+
+<div className="flex flex-col my-6 w-full">
+  <div className="flex flex-col gap-4 p-4 bg-blue-950/10 mb-2 rounded-lg w-full">
+    <Flex align="start" className="p-2 border h-24">
+      <div className="dark:bg-slate-100/20 bg-slate-900/20 w-[25%] h-12">1</div>
+      <div className="dark:bg-slate-100/20 bg-slate-900/20 w-[25%] h-12">2</div>
+      <div className="dark:bg-slate-100/20 bg-slate-900/20 w-[25%] h-12">3</div>
+    </Flex>
+    <div className="block w-full py-0">
+      ```jsx code copy
+      <Flex align="start">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </Flex>
+      ```
+    </div>
+    <Flex align="end" className="p-2 border h-24">
+      <div className="dark:bg-slate-100/20 bg-slate-900/20 w-[25%] h-12">1</div>
+      <div className="dark:bg-slate-100/20 bg-slate-900/20 w-[25%] h-12">2</div>
+      <div className="dark:bg-slate-100/20 bg-slate-900/20 w-[25%] h-12">3</div>
+    </Flex>
+    <div className="block w-full py-0">
+      ```jsx code copy
+      <Flex align="end">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </Flex>
+      ```
+    </div>
+    <Flex align="center" className="p-2 border h-24">
+      <div className="dark:bg-slate-100/20 bg-slate-900/20 w-[25%] h-12">1</div>
+      <div className="dark:bg-slate-100/20 bg-slate-900/20 w-[25%] h-12">2</div>
+      <div className="dark:bg-slate-100/20 bg-slate-900/20 w-[25%] h-12">3</div>
+    </Flex>
+    <div className="block w-full py-0">
+      ```jsx code copy
+      <Flex align="center">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </Flex>
+      ```
+    </div>
+    <Flex align="stretch" className="p-2 border h-24">
+      <div className="dark:bg-slate-100/20 bg-slate-900/20 w-[25%] h-12">1</div>
+      <div className="dark:bg-slate-100/20 bg-slate-900/20 w-[25%] h-12">2</div>
+      <div className="dark:bg-slate-100/20 bg-slate-900/20 w-[25%] h-12">3</div>
+    </Flex>
+    <div className="block w-full py-0">
+      ```jsx code copy
+      <Flex align="stretch">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </Flex>
+      ```
+    </div>
+    <Flex align="baseline" className="p-2 border h-24">
+      <div className="dark:bg-slate-100/20 bg-slate-900/20 w-[25%] h-12">1</div>
+      <div className="dark:bg-slate-100/20 bg-slate-900/20 w-[25%] h-12">2</div>
+      <div className="dark:bg-slate-100/20 bg-slate-900/20 w-[25%] h-12">3</div>
+    </Flex>
+    <div className="block w-full py-0">
+      ```jsx code copy
+      <Flex align="baseline">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </Flex>
+      ```
+    </div>
+  </div>
+</div>
+
+### Justify
+
+<div className="flex flex-col my-6 w-full">
+  <div className="flex flex-col gap-4 p-4 bg-blue-950/10 mb-2 rounded-lg w-full">
+    <Flex justify="start" className="p-2 border">
+      <div className="dark:bg-slate-100/20 bg-slate-900/20 w-[25%] h-12">1</div>
+      <div className="dark:bg-slate-100/20 bg-slate-900/20 w-[25%] h-12">2</div>
+      <div className="dark:bg-slate-100/20 bg-slate-900/20 w-[25%] h-12">3</div>
+    </Flex>
+    <div className="block w-full py-0">
+      ```jsx code copy
+      <Flex justify="start">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </Flex>
+      ```
+    </div>
+    <Flex justify="end" className="p-2 border">
+      <div className="dark:bg-slate-100/20 bg-slate-900/20 w-[25%] h-12">1</div>
+      <div className="dark:bg-slate-100/20 bg-slate-900/20 w-[25%] h-12">2</div>
+      <div className="dark:bg-slate-100/20 bg-slate-900/20 w-[25%] h-12">3</div>
+    </Flex>
+    <div className="block w-full py-0">
+      ```jsx code copy
+      <Flex justify="end">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </Flex>
+      ```
+    </div>
+    <Flex justify="center" className="p-2 border">
+      <div className="dark:bg-slate-100/20 bg-slate-900/20 w-[25%] h-12">1</div>
+      <div className="dark:bg-slate-100/20 bg-slate-900/20 w-[25%] h-12">2</div>
+      <div className="dark:bg-slate-100/20 bg-slate-900/20 w-[25%] h-12">3</div>
+    </Flex>
+    <div className="block w-full py-0">
+      ```jsx code copy
+      <Flex justify="center">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </Flex>
+      ```
+    </div>
+    <Flex justify="between" className="p-2 border">
+      <div className="dark:bg-slate-100/20 bg-slate-900/20 w-[25%] h-12">1</div>
+      <div className="dark:bg-slate-100/20 bg-slate-900/20 w-[25%] h-12">2</div>
+      <div className="dark:bg-slate-100/20 bg-slate-900/20 w-[25%] h-12">3</div>
+    </Flex>
+    <div className="block w-full py-0">
+      ```jsx code copy
+      <Flex justify="between">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </Flex>
+      ```
+    </div>
+    <Flex justify="around" className="p-2 border">
+      <div className="dark:bg-slate-100/20 bg-slate-900/20 w-[25%] h-12">1</div>
+      <div className="dark:bg-slate-100/20 bg-slate-900/20 w-[25%] h-12">2</div>
+      <div className="dark:bg-slate-100/20 bg-slate-900/20 w-[25%] h-12">3</div>
+    </Flex>
+    <div className="block w-full py-0">
+      ```jsx code copy
+      <Flex justify="around">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </Flex>
+      ```
+    </div>
+    <Flex justify="evenly" className="p-2 border">
+      <div className="dark:bg-slate-100/20 bg-slate-900/20 w-[25%] h-12">1</div>
+      <div className="dark:bg-slate-100/20 bg-slate-900/20 w-[25%] h-12">2</div>
+      <div className="dark:bg-slate-100/20 bg-slate-900/20 w-[25%] h-12">3</div>
+    </Flex>
+    <div className="block w-full py-0">
+      ```jsx code copy
+      <Flex justify="evenly">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </Flex>
+      ```
+    </div>
+  </div>
+</div>

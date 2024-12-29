@@ -6,7 +6,7 @@ import { Info } from "lucide-react";
 <p className="text-xl">
   Alert to communicate a state that affects a system, feature or page.
 </p>
-<IssueHeader source="alert" />
+<IssueHeader source="components/alert/alert" />
 
 Start using via importing:
 
@@ -29,7 +29,7 @@ import { Alert } from "@perceptui/ui";
 
 | Prop      | Type                                          | Description          | Default |
 | :-------- | :-------------------------------------------- | :------------------- | :------ |
-| variant   | `"solid" \| "outline"`                        | Form of the Alert    | solid   |
+| variant   | `"solid" \| "outline" \| "surface`            | Form of the Alert    | solid   |
 | type      | `"success" \| "warning" \| "error" \| "info"` | Type of the Alert    | success |
 | message   | `string`                                      | Message of the Alert | \_      |
 | icon      | `ReactNode`                                   | Icon of the Alert    | type    |
@@ -45,6 +45,7 @@ Use the `variant` prop to control the visual style of the button.
   <div className="flex flex-col gap-2 p-4 bg-blue-950/15 mb-2 rounded-lg w-full">
     <Alert variant={"solid"} message="This is alert with solid variant." />
     <Alert variant={"outline"} message="This is alert with outline variant." />
+    <Alert variant={"surface"} message="This is alert with outline variant." />
   </div>
   <div className="block text-wrap w-full py-1">
     ```jsx code copy
@@ -54,6 +55,11 @@ Use the `variant` prop to control the visual style of the button.
   <div className="block text-wrap w-full py-1">
     ```jsx code copy
     <Alert variant="outline" message="This is alert with outline variant." />
+    ```
+  </div>
+  <div className="block text-wrap w-full py-1">
+    ```jsx code copy
+    <Alert variant="surface" message="This is alert with outline variant." />
     ```
   </div>
 </div>

@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@perceptui/ui": "^0.0.11",
+    "@perceptui/ui": "^0.0.13",
     "@radix-ui/react-dialog": "^1.1.2",
     "@radix-ui/react-scroll-area": "^1.2.2",
     "@radix-ui/react-slot": "^1.1.0",

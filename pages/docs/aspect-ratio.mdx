@@ -1,0 +1,36 @@
+import { AspectRatio } from "@perceptui/ui";
+import { IssueHeader } from "@/components/issue-header";
+
+<h1 className="text-4xl font-bold mt-5">Alert</h1>
+<p className="text-xl">Aspect Ratio layout</p>
+<IssueHeader source="layouts/aspect-ratio" />
+
+Start using via importing:
+
+```tsx code copy
+import { AspectRatio } from "@perceptui/ui";
+```
+
+<div className="flex flex-col my-6 w-full">
+  <div className="flex gap-2 p-4 bg-blue-950/10 mb-2 rounded-lg w-full">
+    <AspectRatio className="dark:bg-slate-100/20 bg-slate-900/20 rounded-md">
+      Aspect Ratio
+    </AspectRatio>
+  </div>
+  <div className="block w-full py-0">
+    ```jsx code copy
+    <AspectRatio>
+      Aspect Ratio
+    </AspectRatio>
+    ```
+  </div>
+</div>
+
+## API References
+
+| Prop      | Type                                                     | Description | Default |
+| :-------- | :------------------------------------------------------- | :---------- | :------ |
+| ratio     | `"1/1" \| "3/4" \| "4/3"  \| "9/16" \| "16/9" \| "21/9"` | Ratio       | `1/1`   |
+| className | `string`                                                 | className   | \_      |
+
+## Examples

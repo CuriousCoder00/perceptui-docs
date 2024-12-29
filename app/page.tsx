@@ -8,6 +8,7 @@ import Footer from "@/components/footer";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import Hero from "@/components/hero";
 import ShowCase from "@/components/showcase";
+import Link from "next/link";
 export default function Component() {
   const fadeIn = {
     initial: { opacity: 0, y: 20 },
@@ -26,6 +27,19 @@ export default function Component() {
   return (
     <div className="min-h-screen bg-black relative overflow-hidden z-[1000]">
       <Header />
+      <div className="flex items-center md:justify-center px-4 w-full mt-20 z-[200]">
+        <Link
+          className="mt-20 z-[100]"
+          href="https://www.producthunt.com/posts/percept-ui?embed=true&utm_source=badge-featured&utm_medium=badge&utm_souce=badge-percept&#0045;ui"
+          target="_blank"
+        >
+          <img
+            src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=733091&theme=dark"
+            alt="Percept&#0032;UI - A&#0032;modern&#0044;&#0032;customizable&#0044;&#0032;and&#0032;accessible&#0032;component&#0032;library&#0046; | Product Hunt"
+            className="w-auto h-auto z-50"
+          />
+        </Link>
+      </div>
       <Hero />
       <ShowCase />
       <div className="flex flex-col items-center justify-center px-5 min-h-dvh opacity-100 ">

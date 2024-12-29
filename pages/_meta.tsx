@@ -7,8 +7,4 @@ export default {
     title: "Templates",
     type: "page"
   },
-  framer:{
-    title: "Framer Components",
-    type: "page"
-  }
 };
