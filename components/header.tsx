@@ -27,19 +27,10 @@ const Header = () => {
         </Link>
         <div className="md:flex hidden items-center space-x-4">
           <Link href="/docs" className="font-medium hover:underline text-sm">
-            Documentation
+            Docs
           </Link>
           <Link href="/templates" className="font-medium hover:underline text-sm">
             Templates
-          </Link>
-          <Link href="/framer" className="font-medium hover:underline text-sm">
-            Framer Components
-          </Link>
-          <Link
-            href="https://github.com/perceptui/ui"
-            className="text-sm font-medium hover:underline"
-          >
-            <FaGithub className="h-6 w-6" />
           </Link>
         </div>
         <div className="flex gap-2 items-center justify-end md:hidden">

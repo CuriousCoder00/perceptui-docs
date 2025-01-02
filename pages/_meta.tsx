@@ -1,6 +1,6 @@
 export default {
   docs: {
-    title: "Documentation",
+    title: "Docs",
     type: "page",
   },
   templates: {
